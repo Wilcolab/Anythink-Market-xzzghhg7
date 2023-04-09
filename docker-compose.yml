@@ -33,6 +33,7 @@ services:
       - PORT=3001
       - REACT_APP_BACKEND_URL=${CODESPACE_BACKEND_URL:-http://localhost:3000}
       - WDS_SOCKET_PORT=${CODESPACE_WDS_SOCKET_PORT:-3001}
+      - OPENAI_API_KEY=YOUR_API_KEY
     working_dir: /usr/src
     volumes:
       - ./:/usr/src/
